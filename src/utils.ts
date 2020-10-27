@@ -1,7 +1,7 @@
 import { Plugins } from "@capacitor/core";
 import Axios from "axios";
 
-export let url = "http://681b9e3e1d32.ngrok.io";
+export let url = "http://localhost:3333";
 let client = Axios.create({
   baseURL: `${url}/api`,
 });
