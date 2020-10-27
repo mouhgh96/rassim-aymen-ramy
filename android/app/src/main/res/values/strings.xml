@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">pfe</string>
+    <string name="title_activity_main">pfe</string>
+    <string name="package_name">com.rassim.aimen</string>
+    <string name="custom_url_scheme">com.rassim.aimen</string>
+</resources>

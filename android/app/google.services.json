@@ -1,0 +1,32 @@
+{
+    "project_info": {
+        "project_number": "766516442761",
+        "firebase_url": "https://racim-aimen.firebaseio.com",
+        "project_id": "racim-aimen",
+        "storage_bucket": "racim-aimen.appspot.com"
+    },
+    "client": [{
+        "client_info": {
+            "mobilesdk_app_id": "1:766516442761:android:827df98abd26612bd5f858",
+            "android_client_info": {
+                "package_name": "com.rassim.aimen"
+            }
+        },
+        "oauth_client": [{
+            "client_id": "766516442761-4so52918rqohf3iue93sbfbntcmpsb5d.apps.googleusercontent.com",
+            "client_type": 3
+        }],
+        "api_key": [{
+            "current_key": "AIzaSyAEXT0byPnhOpB93PDshkkga74u7aMz5yM"
+        }],
+        "services": {
+            "appinvite_service": {
+                "other_platform_oauth_client": [{
+                    "client_id": "766516442761-4so52918rqohf3iue93sbfbntcmpsb5d.apps.googleusercontent.com",
+                    "client_type": 3
+                }]
+            }
+        }
+    }],
+    "configuration_version": "1"
+}

@@ -1,0 +1,33 @@
+.toggle {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto 0px;
+    width: 128px;
+    height: 28px;
+    background: rgb(236, 240, 245);
+    border-radius: 18px;
+    button {
+        background-color: transparent;
+        border: none;
+        border-radius: 16px;
+        color: rgb(91, 112, 139);
+        cursor: pointer;
+        // font-family: var(--font-family);
+        font-size: 11px;
+        letter-spacing: -0.02em;
+        width: calc(50% - 2px);
+        line-height: 21px;
+        padding-top: 2px;
+        transition: background-color 200ms ease 0s, color 200ms ease 0s;
+        &:focus {
+            outline: 0;
+        }
+    }
+    .selected {
+        background-color: white;
+        color: var(--ion-color-primary);
+        font-weight: 600;
+        box-shadow: rgba(0, 16, 46, 0.15) 0px 2px 3px;
+    }
+}
