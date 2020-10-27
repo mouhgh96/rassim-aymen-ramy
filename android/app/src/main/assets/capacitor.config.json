@@ -1,0 +1,18 @@
+{
+  "appId": "com.rassim.aimen",
+  "appName": "pfe",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "build",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    },
+    "LocalNotifications": {
+      "smallIcon": "ic_stat_webp_net_resizeimage_1",
+      "iconColor": "#FF0000"
+    }
+  },
+  "linuxAndroidStudioPath": "/var/lib/snapd/snap/bin/android-studio",
+  "cordova": {}
+}
