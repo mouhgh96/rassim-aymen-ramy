@@ -1,4 +1,4 @@
-# TECHNOLOGIE (backend)
+# TECHNOLOGIE (frontend)
 
 - editeur visual studio code
 - langage javascript html sass
