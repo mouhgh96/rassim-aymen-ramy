@@ -15,7 +15,17 @@ import "@ionic/react/css/text-transformation.css";
 import "@ionic/react/css/typography.css";
 import React from "react";
 import { Route } from "react-router-dom";
-import { Exits, Home, Leave, Login, Logout } from "./pages";
+import "./global.scss";
+import {
+  ExitEdit,
+  Exits,
+  Home,
+  Leave,
+  LeaveEdit,
+  Login,
+  Logout,
+  Profile,
+} from "./pages";
 /* Theme variables */
 import "./theme/variables.css";
 
@@ -27,6 +37,9 @@ const App: React.FC = () => (
 
         <Route path="/login" component={Login} exact={true} />
         <Route path="/logout" component={Logout} exact={true} />
+        <Route path="/profile" component={Profile} exact={true} />
+        <Route path="/leaves/edit/:id" component={LeaveEdit} exact={true} />
+        <Route path="/exits/edit/:id" component={ExitEdit} exact={true} />
         <Route path="/leaves/:id" component={Leave} exact={true} />
         <Route path="/exits/:id" component={Exits} exact={true} />
       </IonRouterOutlet>

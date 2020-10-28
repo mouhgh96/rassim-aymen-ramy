@@ -1,12 +1,14 @@
 import { Plugins } from "@capacitor/core";
 import {
+  IonButton,
+  IonIcon,
   IonInput,
   IonItem,
   IonItemDivider,
   IonLabel,
-  IonText,
 } from "@ionic/react";
-import { addDays, format } from "date-fns";
+import { addDays, format, isAfter } from "date-fns";
+import { pencil } from "ionicons/icons";
 import React, { useEffect, useState } from "react";
 import { useHistory, useParams } from "react-router";
 import { Protected } from "../../components";
@@ -46,6 +48,10 @@ export const Leave: React.FC = () => {
     );
   }
 
+  let editable: boolean =
+    leave.state == 0 &&
+    grade !== 2 &&
+    isAfter(new Date(leave.leaveDay), Date.now());
   let confirmRequest = async () => {
     setIsCancelling(false);
     //@ts-ignore
@@ -76,9 +82,21 @@ export const Leave: React.FC = () => {
   return (
     <Protected>
       <div className="ion-padding">
-        <IonText>
+        <div className="detail_header">
           <h1>Detail de la demande de Congé</h1>
-        </IonText>
+          {editable && (
+            <IonButton
+              routerLink={`/leaves/edit/${leave.id}`}
+              className="ion-margin-start"
+            >
+              <IonIcon
+                slot="icon-only"
+                icon={pencil}
+                className="ion-margin-horizontal"
+              />
+            </IonButton>
+          )}
+        </div>
         <ul className="info">
           <li className="info-item">
             <span className="info-key">Nom:</span>

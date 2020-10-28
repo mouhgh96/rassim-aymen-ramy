@@ -15,8 +15,8 @@ import "./Login.scss";
 
 let { Storage } = Plugins;
 export const Login: React.FC = () => {
-  let [id, setId] = useState<string>("984584");
-  let [password, setPassword] = useState<string>("root");
+  let [id, setId] = useState<string>();
+  let [password, setPassword] = useState<string>();
   let [error, setError] = useState("");
   let history = useHistory();
   let onSubmit = async (e: SyntheticEvent) => {
@@ -43,7 +43,7 @@ export const Login: React.FC = () => {
         key: "grade",
         value: grade,
       });
-      history.replace("/");
+      history.replace("/profile");
     } catch (error) {
       let response = error.response;
       if (response) {

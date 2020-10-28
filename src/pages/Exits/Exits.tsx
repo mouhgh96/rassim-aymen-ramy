@@ -1,12 +1,14 @@
 import { Plugins } from "@capacitor/core";
 import {
+  IonButton,
+  IonIcon,
   IonInput,
   IonItem,
   IonItemDivider,
   IonLabel,
-  IonText,
 } from "@ionic/react";
-import { format } from "date-fns";
+import { format, isAfter } from "date-fns";
+import { pencil } from "ionicons/icons";
 import React, { useEffect, useState } from "react";
 import { useHistory, useParams } from "react-router";
 import { Protected } from "../../components";
@@ -74,12 +76,28 @@ export const Exits: React.FC = () => {
   } else if (exit.state == 2) {
     stateText = "Refusé";
   }
+  let editable: boolean =
+    exit.state == 0 &&
+    grade !== 2 &&
+    isAfter(new Date(exit.exitDay), Date.now());
   return (
     <Protected>
       <div className="ion-padding">
-        <IonText>
+        <div className="detail_header">
           <h1>Detail de la demande de Sortie</h1>
-        </IonText>
+          {editable && (
+            <IonButton
+              routerLink={`/exits/edit/${exit.id}`}
+              className="ion-margin-start"
+            >
+              <IonIcon
+                slot="icon-only"
+                icon={pencil}
+                className="ion-margin-horizontal"
+              />
+            </IonButton>
+          )}
+        </div>
         <ul className="info">
           <li className="info-item">
             <span className="info-key">Nom:</span>

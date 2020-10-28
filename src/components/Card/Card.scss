@@ -10,21 +10,26 @@
         .state {
             margin-left: auto;
             font-size: 0.9rem;
-            padding: 4px 6px;
             border-radius: 3px;
             font-weight: bold;
             letter-spacing: 1.1px;
             &0 {
-                background-color: #ddd;
+                background-color: #ddd !important;
                 color: #000;
+                display: inline-block;
+                padding: 4px 6px;
             }
             &1 {
-                background-color: #1ac31a;
+                background-color: #1ac31a !important;
                 color: #fff;
+                display: inline-block;
+                padding: 4px 6px;
             }
             &2 {
-                background-color: #f50707;
+                background-color: #f50707 !important;
                 color: #fff;
+                display: inline-block;
+                padding: 4px 6px;
             }
         }
     }

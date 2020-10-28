@@ -10,15 +10,18 @@ import { fr } from "date-fns/locale";
 import React from "react";
 import { Exit, Leave } from "../../model";
 import "./Card.scss";
-export let Card: React.FC<(Leave | Exit) & { route: string }> = ({
-  id,
-  description,
-  user: { firstName, lastName },
-  state,
-  updatedAt,
-  route,
-}) => {
+export let Card: React.FC<(Leave | Exit) & { route: string }> = (props) => {
+  let {
+    id,
+    description,
+    user: { firstName, lastName },
+    state,
+    updatedAt,
+    route,
+  } = props;
   let stateText = "En Attente";
+
+  //@ts-ignore
   if (state == 1) {
     stateText = "Accepté";
   } else if (state == 2) {

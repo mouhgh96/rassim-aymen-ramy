@@ -23,7 +23,7 @@ const schema = Yup.object().shape({
     .required("la description est requise"),
   destination: Yup.string()
     .trim("Veuillez entrer une destination")
-    .required("la description est requise"),
+    .required("la destination est requise"),
   duration: Yup.string()
     .matches(/^[1-9][0-9]*$/, "la duré doit etre plus de 0")
 
