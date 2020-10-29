@@ -199,7 +199,7 @@ export let AddExit: React.FC<Props> = ({ onSubmit, onReset }) => {
           Annuler
         </IonButton>
         <IonButton type="submit" className="ion-margin-top" size="large">
-          Register
+          Confirmer
         </IonButton>
       </div>
     </form>
