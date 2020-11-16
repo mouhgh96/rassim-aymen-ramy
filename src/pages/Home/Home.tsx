@@ -12,7 +12,7 @@ import React, { useEffect, useState } from "react";
 import { AddExit, AddLeave, Card, Protected } from "../../components";
 import { Exit, Leave } from "../../model";
 import { client } from "../../utils";
-import "./Home.scss";
+import "./Home.css";
 
 export const Home: React.FC = () => {
   let [leaves, setLeaves] = useState<Leave[]>([]);

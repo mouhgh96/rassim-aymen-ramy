@@ -11,6 +11,7 @@ export let Logout = () => {
     let logout = async () => {
       try {
         await Plugins.Storage.clear();
+
         setIsLoggedIn(false);
         socket.disconnect();
         // may be add some login to not send a notification when a user is Logged Out

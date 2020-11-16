@@ -15,7 +15,7 @@ import "@ionic/react/css/text-transformation.css";
 import "@ionic/react/css/typography.css";
 import React from "react";
 import { Route } from "react-router-dom";
-import "./global.scss";
+import "./global.css";
 import {
   ExitEdit,
   Exits,

@@ -1,0 +1,83 @@
+.info {
+  margin-bottom: 0;
+}
+.info .info-item {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+.info .info-item .state {
+  font-size: 0.9rem;
+  padding: 4px 6px;
+  border-radius: 3px;
+  font-weight: bold;
+  letter-spacing: 1.1px;
+}
+.info .info-item .state0 {
+  background-color: #ddd;
+  color: #000;
+}
+.info .info-item .state1 {
+  background-color: #1ac31a;
+  color: #fff;
+}
+.info .info-item .state2 {
+  background-color: #f50707;
+  color: #fff;
+}
+.info .info-item .info-key {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-right: 4px;
+}
+.info .info-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.description {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+.refus {
+  display: flex;
+}
+.refus .submit_cancel {
+  padding: 10px 19px;
+  color: white;
+  background: red;
+  font-weight: bold;
+  margin: 15px auto;
+  font-size: 1.3rem;
+  border-radius: 8px;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+}
+
+.btn-actions {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.btn-actions button {
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.btn-actions .cancel {
+  color: red;
+  background-color: #fff;
+}
+.btn-actions .confirm {
+  color: green;
+  background: #fff;
+}

@@ -15,7 +15,7 @@ import { useHistory, useParams } from "react-router";
 import * as Yup from "yup";
 import { Protected } from "../../components";
 import { client } from "../../utils";
-import "./LeaveEdit.scss";
+import "./LeaveEdit.css";
 
 interface Props {
   onSubmit: (data: any) => Promise<void>;

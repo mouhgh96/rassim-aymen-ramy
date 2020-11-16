@@ -9,7 +9,7 @@ import { formatRelative } from "date-fns";
 import { fr } from "date-fns/locale";
 import React from "react";
 import { Exit, Leave } from "../../model";
-import "./Card.scss";
+import "./Card.css";
 export let Card: React.FC<(Leave | Exit) & { route: string }> = (props) => {
   let {
     id,

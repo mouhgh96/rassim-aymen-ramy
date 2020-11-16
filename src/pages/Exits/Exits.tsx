@@ -14,7 +14,7 @@ import { useHistory, useParams } from "react-router";
 import { Protected } from "../../components";
 import { Exit } from "../../model";
 import { client } from "../../utils";
-import "./Exits.scss";
+import "./Exits.css";
 
 export const Exits: React.FC = () => {
   let params = useParams();

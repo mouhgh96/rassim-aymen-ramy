@@ -1,0 +1,15 @@
+.Login {
+  max-width: 80%;
+  margin: auto;
+}
+.Login img {
+  width: 80%;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+}
+.Login__error {
+  text-align: center;
+  height: 1rem;
+  font-weight: bold;
+}

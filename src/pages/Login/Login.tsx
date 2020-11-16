@@ -11,7 +11,7 @@ import {
 import React, { SyntheticEvent, useState } from "react";
 import { useHistory } from "react-router";
 import { client } from "../../utils";
-import "./Login.scss";
+import "./Login.css";
 
 let { Storage } = Plugins;
 export const Login: React.FC = () => {

@@ -11,7 +11,7 @@ import { addDays } from "date-fns";
 import React, { useState } from "react";
 import { Controller, useForm } from "react-hook-form";
 import * as Yup from "yup";
-import "./AddExit.scss";
+import "./AddExit.css";
 
 interface Props {
   onSubmit: (data: any) => Promise<void>;

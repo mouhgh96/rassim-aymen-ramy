@@ -1,0 +1,32 @@
+.toggle {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto 0px;
+  width: 128px;
+  height: 28px;
+  background: #ecf0f5;
+  border-radius: 18px;
+}
+.toggle button {
+  background-color: transparent;
+  border: none;
+  border-radius: 16px;
+  color: #5b708b;
+  cursor: pointer;
+  font-size: 11px;
+  letter-spacing: -0.02em;
+  width: calc(50% - 2px);
+  line-height: 21px;
+  padding-top: 2px;
+  transition: background-color 200ms ease 0s, color 200ms ease 0s;
+}
+.toggle button:focus {
+  outline: 0;
+}
+.toggle .selected {
+  background-color: white;
+  color: var(--ion-color-primary);
+  font-weight: 600;
+  box-shadow: rgba(0, 16, 46, 0.15) 0px 2px 3px;
+}

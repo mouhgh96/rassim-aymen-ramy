@@ -15,7 +15,7 @@ import { useHistory, useParams } from "react-router";
 import * as Yup from "yup";
 import { Protected } from "../../components";
 import { client } from "../../utils";
-import "./ExitEdit.scss";
+import "./ExitEdit.css";
 
 const schema = Yup.object().shape({
   exitHour: Yup.number()

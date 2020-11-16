@@ -14,7 +14,7 @@ import { useHistory, useParams } from "react-router";
 import { Protected } from "../../components";
 import { Leave as LeaveModel } from "../../model";
 import { client } from "../../utils";
-import "./Leaves.scss";
+import "./Leaves.css";
 
 export const Leave: React.FC = () => {
   let params = useParams();
@@ -145,7 +145,7 @@ export const Leave: React.FC = () => {
         </ul>
         <IonItemDivider />
         <div className="description">{leave.description}</div>
-        {grade == 2 && leave.state === 0 && (
+        {grade == 2 && leave.state == 0 && (
           <div className="btn-actions">
             <button
               className="cancel"
